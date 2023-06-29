@@ -6,6 +6,8 @@
 2. ¿Qué construí? 
 3. Objetivo del proyecto 
 4. Link a practica
+
+   
 ![ProgrammingComputerFrogGIF](https://github.com/ItsMich24/Flexbox-y-CSS-practica/assets/135682047/75021be9-e505-4693-8d9b-019a4cc3a263)
 
 ****
@@ -24,11 +26,11 @@ Ambas técnicas ofrecen soluciones poderosas y complementarias para el diseño d
 
 
 ## 2. ¿Qué construí?
-🍒En este proyecto me enfoque en construir un ejemplo donde se utilizan los elemtentos de FLEXBOX y CSS-GRID en un menú de pizzas.🍒
+En este proyecto me enfoque en construir un ejemplo donde se utilizan los elemtentos de FLEXBOX y CSS-GRID en un menú de pizzas.
 
 
 ## 3. Objetivo del proyecto
-🍃Aprender a utilizar las los elementos de FLEXBOX y CSS-GRID🍃
+Aprender a utilizar las los elementos de FLEXBOX y CSS-GRID
 
 ## 4. Link a demo
-Aquí puedes visualizar mi proyecto terminado: [Flexbox y CSS-Grid](https://cerulean-cendol-1860e5.netlify.app)🌱
+Aquí puedes visualizar mi proyecto terminado: [Flexbox y CSS-Grid]([https://cerulean-cendol-1860e5.netlify.app](https://majestic-frangollo-8aa143.netlify.app/)https://majestic-frangollo-8aa143.netlify.app/)
