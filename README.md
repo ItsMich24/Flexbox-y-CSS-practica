@@ -33,4 +33,4 @@ En este proyecto me enfoque en construir un ejemplo donde se utilizan los elemte
 Aprender a utilizar las los elementos de FLEXBOX y CSS-GRID
 
 ## 4. Link a demo
-Aquí puedes visualizar mi proyecto terminado: [Flexbox y CSS-Grid]([https://cerulean-cendol-1860e5.netlify.app](https://majestic-frangollo-8aa143.netlify.app/)https://majestic-frangollo-8aa143.netlify.app/)
+Aquí puedes visualizar mi proyecto terminado: [Flexbox y CSS-Grid](https://cerulean-cendol-1860e5.netlify.app](https://majestic-frangollo-8aa143.netlify.app/)https://majestic-frangollo-8aa143.netlify.app/)
