@@ -1,0 +1,151 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	/*display: flex;
+	gap: 20px;*//*Agregadp de Flexbox*/
+	display: grid;
+	grid-template-columns: 3fr 1fr;/*Define el tamaño de las columnas
+	el 3fr ocupara 3 partes del espacio que hay */
+	gap: 20px;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-pizzas {
+	/*Agregado de flexbox*/
+	/* width: 70%;
+	display: flex;
+	flex-wrap: wrap;/*Normalmente, los elementos flexibles tratarán de ajustarse todos en una línea, 
+	independientemente de cuántos sean. flex-wrap: wrap; cambia este comportamiento,
+	permitiendo que los elementos se ajusten en líneas adicionales a medida que se necesita. 
+	Esta propiedad es especialmente útil cuando se usa Flexbox 
+	*/
+	/*gap: 20px;/*Define el tamaño del espacio que debe haber entre cada elemento*/ 
+	
+	
+	display: grid;/*se convierte en un contenedor de cuadrícula y sus elementos internos se pueden
+	colocar en celdas dentro de esa cuadrícula.
+	se utiliza en CSS (Cascading Style Sheets) para establecer un elemento como una cuadrícula (grid)
+	y definir su diseño en filas y columnas. */
+	grid-template-columns: repeat(3, 1fr);/*Definimos el tamaño y el numero de columnas
+	(3 columnas del mismo tamaño)*/
+	gap: 20px; /*Se separan las imagenes(columnas)*/
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;/*Permite posicionar conforme el tamaño de nuestra pagina*/
+	overflow: hidden;/*Especifica que hacer si el contenedor de un elemento es muy grande
+	y se sale de su area y asi no se desbordan los elementos*/
+	background-size: cover;
+	background-position: center center;
+	/*Agregado de flexbox*/
+	/* width: 33.33%;/*Esta propiedad establece la anchura del elemento a un tercio 
+	(33.33%) del ancho de su elemento contenedor*/
+	/* width: calc(33.33% - 20px);/*Esta propiedad también establece la anchura del elemento, 
+	pero esta vez utiliza una función de cálculo para restar 20px del 33.33% del ancho
+	del contenedor. Sin embargo, esta línea de código anula la línea anterior debido a que se 
+	lee después. Es importante notar que el soporte para la función calc() puede variar en diferentes navegadores.*/
+}
+
+.card .textos {
+	height: 100%;
+	/*Agregado de flexbox*/
+	/*display: flex;*/
+	/*flex-direction: column;/*Hace que los elementos se acomoden en columnar*/
+	/*justify-content: space-between;/*El primer elemento va a estar en la parte superior
+	y el ultimo elemento en la aprte inferior y el espacio restante se distribuye */
+
+	display: grid;
+	grid-template-rows: 1fr auto; /*AUTO: Toma el espacio que necesita*/
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	/*Agregado de flexbox*/
+	/*
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;*/
+
+	display: grid;
+	grid-template-rows: auto auto auto;/*El tamaño de cada fila depende del 
+	contenedor*/
+	align-items: center;/**/
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+/*Establecen medidas para pantallas especificas
+*/
+
+/*Cuando el ancho de la pantalla es mayor o menor a 900px el contenedor se
+ajustara a ella*/
+@media screen and (max-width: 900px) {
+	.contenedor{
+		grid-template-columns: 1fr;
+	}
+}
+
+/*Cuando el ancho de la pantalla sea de mas de 700
+o menor se aplica una altura de 150 px*/
+@media screen and (max-width: 700px) {
+	.card{
+		min-height: 150px;
+		padding: 15px;
+	}
+}
+
+/*Cuando el ancho de la pantalla sea mayor o menor 
+a 600 se colocan las siguientes caracteristicas al banner*/
+@media screen and (max-width: 600px) {
+	.banner{
+		grid-template-rows: auto auto;
+	}
+}

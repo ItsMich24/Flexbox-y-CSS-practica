@@ -1,2 +1,1 @@
-# Flexbox-y-CSS-practica
-Practica basica creada con flexbox
+# Flexbox-y-CSS-Grid
